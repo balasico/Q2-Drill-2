@@ -20,6 +20,7 @@
        }
     </style>
 </head>
+
 <body>
   <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom border-5 border-primary">
   <div class="container-fluid">
@@ -56,13 +57,132 @@
 
 <br><br>
 
-<div class="container bg-light rounded-2 p-3">
-    <p class="lead fw-bold"><kbd class="text-warning">Enroll</kbd></p>
-
-    <blockquote>
-        <span class="">Lorem ipsum</span>  dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <span class="fst-italic">quis nostrud exercitation ullamco laboris</span> nisi ut aliquip ex ea commodo consequat. <span class="text-primary">Duis aute irure dolor</span> in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-    </blockquote>
+<div class="container text-light">
+    <p class="lead fw-bold text-center"><kbd class="text-warning">OBMC Student Enrollment Form</kbd></p>
+    <p class="text-center">Fill ouf the following form to apply for S.Y. 2026-2027</p>
 </div>
+
+<!--FORM-->
+<form action="#">
+<div class="container bg-light bg-opacity-75 rounded-2 p-3">
+  <p class="float-start lead text-dark">Student Information</p>
+
+  <br><br>
+
+  <div class="row">
+    <div class="col-sm">
+        <label for="fname" class="form-label">First Name:</label>
+        <input type="text" class="form-control" id="fname" placeholder="First Name">
+    </div>
+    <div class="col-sm">
+        <label for="lname" class="form-label">Last Name:</label>
+        <input type="text" class="form-control" id="lname" placeholder="Last Name">
+    </div>
+  </div>
+
+  <br>
+
+  <div class="row">
+    <div class="col-sm">
+        <label for="birth_date" class="form-label">Birth Date:</label>
+        <input type="date" class="form-control" id="birth_date" placeholder="dd/mm/yy">
+    </div>
+
+    <div class="col-sm">
+        <label for="gender" class="form-label">Gender:</label>
+        <select class="form-select" id="gender">
+          <option value="choose">-- Select Gender --</option>
+          <option value="F">Female</option>
+          <option value="M">Male</option>
+        </select>
+    </div>
+
+    <div class="col-sm">
+        <label for="grade_level" class="form-label">Grade Level:</label>
+        <select class="form-select" id="grade_level">
+          <option value="choose">-- Select Grade Level --</option>
+          <option value="C">Casa</option>
+          <option value="1">Grade 1</option>
+          <option value="2">Grade 2</option>
+          <option value="3">Grade 3</option>
+          <option value="4">Grade 4</option>
+          <option value="5">Grade 5</option>
+          <option value="6">Grade 6</option>
+          <option value="7">Grade 7</option>
+          <option value="8">Grade 8</option>
+          <option value="9">Grade 9</option>
+          <option value="10">Grade 10</option>
+          <option value="11">Grade 11</option>
+        </select>
+      </div>
+
+      <div class="col-sm">
+        <label for="campus" class="form-label">Campus:</label>
+        <select class="form-select" id="campus">
+          <option value="choose">-- Select Campus --</option>
+          <option value="FV">Fairview</option>
+          <option value="LP">Las Piñas</option>
+          <option value="A">Angeles</option>
+          <option value="GH">Greenhills</option>
+          <option value="SA">Sta. Ana</option>
+        </select>
+      </div>
+
+  </div>
+
+  <br>
+
+  <p class="float-start lead text-dark">Contact Details</p>
+
+  <br><br>
+
+    <label for="email" class="form-label">Email Address:</label>
+    <input type="email" class="form-control" id="email_add" placeholder="youremail@gmail.com">
+
+    <label for="phone_no" class="form-label">Phone Number:</label>
+    <input type="number" class="form-control" id="phone_no" placeholder="000-0000-0000">
+  
+  <br>
+
+  <p class="float-start lead text-dark">Other Information</p>
+
+  <br><br>
+
+    <label class="form-label">Mode of Learing</label>
+    <div class="form-check">
+      <input type="radio" class="form-check-input" id="online_radio" value="online_radio">
+      <label for="online_radio" class="form-check-label">
+        Online
+      </label>
+    </div>
+    <div class="form-check">
+      <input type="radio" class="form-check-input" id="F2F" value="F2F">
+      <label for="F2F" class="form-check-label">
+        Face to Face
+      </label>
+    </div>
+
+  <br>
+
+  <input type="checkbox" class="form-check-input" id="F2F" value="F2F">
+  <label for="F2F" class="form-check-label">
+    I confim that the information provided is true and complete
+  </label>
+
+  <br><br>
+
+  <button class="btn rounded-2 text-light px-3 py-2 mx-auto d-block" type="button" style="background-color: #0c4984;">
+    <a href="#" class="link-light link-underline link-underline-opacity-0">
+      Submit Enrollment
+    </a>
+  </button>
+</div>
+
+<br>
+</form>
+
+<p class="text-center text-light" style="background-color: #0c4984;">&copy; 2025 Enrollment System | By Rachel Balasico 9Sapphire</p>
+
 
 </body>
 </html>
